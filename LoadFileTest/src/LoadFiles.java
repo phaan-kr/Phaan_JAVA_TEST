@@ -8,12 +8,12 @@ import java.io.IOException;
 
 
 public class LoadFiles {
-	String DIRECTORY_PATH="C:\\workspace\\PLUGINS\\JIRA_RSSreader\\target\\jira\\home\\export\\RIP\\Call\\Network Registration\\";
+	String DIRECTORY_PATH="C:\\workspace\\RSSreader\\";
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         // 디렉토리에 접근
-        File dir = new File("C:\\workspace\\PLUGINS\\JIRA_RSSreader\\target\\jira\\home\\export\\DBS\\DB Issues & Defects\\_codeaurora.org_gitweb_quic_la__p=platform_frameworks_base.git;a=rss;f=core_java_android_content_pm_ProviderInfo.java");
+        File dir = new File("C:\\workspace\\RSSreader\\platform_frameworks_base.git;a=rss;f=core_java_android_content_pm_ProviderInfo.java");
  
         // 디렉토리 내에서 파일명에 aa가 포함되고 확장자가 txt인 파일 필터링
         File[] files = dir.listFiles();
