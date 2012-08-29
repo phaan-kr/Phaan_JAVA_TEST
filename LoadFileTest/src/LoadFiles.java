@@ -6,14 +6,20 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-
+/**
+ * new File로 읽어오고
+ * new BufferedReader(file),
+ * while(line = br.readLine() != null)
+ * 	line..
+ * 
+ * */
 public class LoadFiles {
 	String DIRECTORY_PATH="C:\\workspace\\RSSreader\\";
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
         // 디렉토리에 접근
-        File dir = new File("C:\\workspace\\RSSreader\\platform_frameworks_base.git;a=rss;f=core_java_android_content_pm_ProviderInfo.java");
+        File dir = new File("C:\\workspace\\RSSreader\\ProviderInfo.java");
  
         // 디렉토리 내에서 파일명에 aa가 포함되고 확장자가 txt인 파일 필터링
         File[] files = dir.listFiles();
